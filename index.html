@@ -59,7 +59,7 @@
                           </div>
                           <div class="col-xs-9 text-right">
                               <div class="huge" id="dau-header">0</div>
-                              <div class="panel-text">Daily Active Users Today</div>
+                              <div class="panel-text">Loans Approved Today</div>
                           </div>
                       </div>
                   </div>
@@ -209,6 +209,22 @@
           </div> <!-- end pager controls -->
         </div> <!-- end of edit table and page selectors -->
       </div> <!-- end of edit table and page selectors container row-->
+      <div class='row' id='headers'>
+        <div class="col-sm-6">
+          <h4 class="text-center text-muted" id="transfer-header" style="diplay: none;"><u>Daily Loans</u></h4>
+        </div>
+        <div class="col-sm-6">
+          <h4 class="text-center text-muted" id="transfer-amounts-header" style="diplay: none;"><u>Daily Loans Amounts</u></h4>
+        </div>
+      </div>
+      <div class='row'>
+        <div class="col-sm-6">
+          <div id='transfer-graph'></div>
+        </div>
+        <div class="col-sm-6">
+          <div id='transfer-amounts-graph'></div>
+        </div>
+      </div>
       <div class="row" id="headers">
           <div class="col-sm-12">
             <h4 class="text-center text-muted" id="avg-campaign-header" style="display: none;"><u>Avg. Events Per User By Campaign</u></h4>
@@ -588,5 +604,7 @@
     <script type="text/javascript" src="js/tableEdit.js"></script>
     <!-- bounce rates by campaign graphing-->
     <script type="text/javascript" src="js/bounceRatesByCampaign.js"></script>
+    <!-- loans-->
+    <script type="text/javascript" src="js/applications.js"></script>
   </body>
 </html>

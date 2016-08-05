@@ -6,11 +6,11 @@ var dauQuery = function(){
     //placeholders for graph
     var DAUs = {}
     var dauData ={}
-  
+
     MP.api.jql(newDAUActiveUserScript).done(function(results) {
       var dauToday = results.length - 1
       dauToday = results[dauToday].value
-      $('#dau-header').text(addCommas(dauToday));
+      
 
       _.each(results, function(value, key){
         DAUs[value.key[0]] = value.value
@@ -22,7 +22,7 @@ var dauQuery = function(){
         enabled: true,
         y:-7
       },
-    }});                                
+    }});
     mdauChart.MPChart('setData', dauData); // Set the chart's data
       $("#dau-chart-header").show()           //display chart header
     })
